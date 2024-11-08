@@ -14,19 +14,17 @@ export const proyectos = [
             "fecha": "2021-01-02",
             "imagen": "proyecto2",
             "link": "https://statuesque-stroopwafel-79de5f.netlify.app/",
-            "tecnologias": ["React", "Tailwind", "Typescript"]
+            "tecnologias": ["react", "tailwind", "typescript"]
 
 
         },
         {
             "id": 3,
-            "nombre": "Proyecto 3",
+            "nombre": "Contador de calorias",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
-            "fecha": "2021-01-03",
-            "imagen": "imagen3",
-            "link": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-            ,
-            "tecnologias": ["React", "Tailwind", "Typescript"]
+            "imagen": "proyecto3",
+            "link": "https://enchanting-kringle-e14115.netlify.app/",
+            "tecnologias": ["react", "tailwind", "typescript"]
 
         }
     ]
