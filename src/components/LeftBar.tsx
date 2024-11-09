@@ -5,7 +5,7 @@ import { IoLogoJavascript, IoLogoCss3, IoIosLink } from "react-icons/io";
 import { SiTypescript, SiTailwindcss, SiReact, SiGithub } from "react-icons/si";
 
 const tecnologiaIconos: TecnologiasIconos = {
-  javascript: <IoLogoJavascript className="text-yellow-500 text-2xl" />,
+  javascript: <IoLogoJavascript  className="text-yellow-500 text-2xl" />,
   css3: <IoLogoCss3 className="text-blue-500 text-2xl" />,
   tailwind: <SiTailwindcss className="text-blue-400 text-2xl" />,
   react: <SiReact className="text-blue-500 text-2xl" />,
@@ -28,9 +28,12 @@ export default function LeftBar() {
               <p className="text-slate-400 font-semibold">{proyecto.nombre}</p>
               <p className="text-slate-300 font-semibold text-xs">{proyecto.descripcion}</p>
               <div className="flex justify-center space-x-2 mt-2">
-                {proyecto.tecnologias.map((tecnologia) => (
-                  tecnologiaIconos[tecnologia] || null
-                ))}
+              {proyecto.tecnologias.map((tecnologia, index) => (
+                    tecnologiaIconos[tecnologia] ? (
+                    <span key={`${proyecto.id}-${index}`}>
+                      {tecnologiaIconos[tecnologia]}
+                    </span>
+                  ) : null ))}
               </div>
               <div className="flex justify-center space-x-2 mt-2">
                 <a href={proyecto.repositorio} target="blank">

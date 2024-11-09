@@ -12,7 +12,7 @@ function App() {
         />
     </header>
       
-      <body className="h-screen w-screen bg-black flex px-4 overflow-x-hidden">
+      <body className="h-screen w-screen bg-black flex px-1 overflow-x-hidden">
         <LeftBar/>
         <MidPart/>
         <RightInfo/>
