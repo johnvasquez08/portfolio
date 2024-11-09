@@ -5,6 +5,7 @@ export type Proyectos = {
     imagen: string;
     link: string;
     tecnologias: string[];
+    repositorio: string;
 }
 
 export type TecnologiasIconos = {
